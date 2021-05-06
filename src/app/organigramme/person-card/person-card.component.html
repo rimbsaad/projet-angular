@@ -1,0 +1,21 @@
+<mat-card class="example-card" style="text-align: center;">
+    <mat-card-header>
+    </mat-card-header>
+
+    <mat-card-content>
+        <div mat-card-avatar class="example-header-image"
+            [ngStyle]="{ 'background-image': 'url(' + employee.avatar + ')'}"></div>
+        <mat-card-title>{{ employee.name }}</mat-card-title>
+        <mat-card-subtitle>{{ employee.job }}</mat-card-subtitle>
+    </mat-card-content>
+
+    <mat-card-actions>
+        <button mat-mini-fab color="accent" aria-label="Facebook">
+            <mat-icon>facebook</mat-icon>
+        </button>
+
+        <button mat-mini-fab color="accent" aria-label="LinkedIn">
+            <mat-icon>public</mat-icon>
+        </button>
+    </mat-card-actions>
+</mat-card>

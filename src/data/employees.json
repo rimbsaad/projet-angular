@@ -1,0 +1,83 @@
+{
+    "employees": [
+        {
+            "level1": [
+                {
+                    "name": "Steven King",
+                    "job": "Chef",
+                    "avatar": "https://reqres.in/img/faces/4-image.jpg"
+                }
+            ]
+        },
+        {
+            "level2": [
+                {
+                    "name": "Alexander King",
+                    "job": "Architecte",
+                    "avatar": "https://reqres.in/img/faces/11-image.jpg"
+                },
+                {
+                    "name": "David Austin",
+                    "job": "Ingénieur",
+                    "avatar": "https://reqres.in/img/faces/9-image.jpg"
+                }
+            ]
+        },
+        {
+            "level3": [
+                [
+                    {
+                        "name": "Diana Lorentz",
+                        "job": "Architecte Software",
+                        "avatar": "https://reqres.in/img/faces/8-image.jpg"
+                    },
+                    {
+                        "name": "Daniel Faviet",
+                        "job": "Ingénieur 1",
+                        "avatar": "https://reqres.in/img/faces/7-image.jpg"
+                    }
+                ],
+                [
+                    {
+                        "name": "John Chen",
+                        "job": "Architecte Hardware",
+                        "avatar": "https://reqres.in/img/faces/6-image.jpg"
+                    },
+                    {
+                        "name": "Luis Popp",
+                        "job": "Ingénieur 2",
+                        "avatar": "https://reqres.in/img/faces/5-image.jpg"
+                    }
+                ]
+            ]
+        },
+        {
+            "level4": [
+                [
+                    {
+                        "name": "Karen Colmenares",
+                        "job": "Technichien",
+                        "avatar": "https://reqres.in/img/faces/12-image.jpg"
+                    },
+                    {
+                        "name": "Payam Kaufling",
+                        "job": "Secrétaire",
+                        "avatar": "https://reqres.in/img/faces/3-image.jpg"
+                    }
+                ],
+                [
+                    {
+                        "name": "Julia Nayer",
+                        "job": "Assistante de l'Architecte",
+                        "avatar": "https://reqres.in/img/faces/2-image.jpg"
+                    },
+                    {
+                        "name": "Karen",
+                        "job": "Dessinateur",
+                        "avatar": "https://reqres.in/img/faces/1-image.jpg"
+                    }
+                ]
+            ]
+        }
+    ]
+}

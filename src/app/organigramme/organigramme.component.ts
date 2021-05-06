@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import data from '../../data/employees.json';
 
 @Component({
   selector: 'app-organigramme',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrganigrammeComponent implements OnInit {
 
-  constructor() { }
+  employees: any;
+
+  constructor() {
+    this.employees = data.employees;
+  }
 
   ngOnInit(): void {
   }

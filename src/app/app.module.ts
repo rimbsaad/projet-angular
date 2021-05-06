@@ -10,6 +10,7 @@ import { ActivitiesComponent } from './activities/activities.component';
 import { OrganigrammeComponent } from './organigramme/organigramme.component';
 import { ContactComponent } from './contact/contact.component';
 import { MainNavComponent } from './main-nav/main-nav.component';
+import { PersonCardComponent } from './organigramme/person-card/person-card.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MainNavComponent } from './main-nav/main-nav.component';
     ActivitiesComponent,
     OrganigrammeComponent,
     ContactComponent,
-    MainNavComponent
+    MainNavComponent,
+    PersonCardComponent
   ],
   imports: [
     BrowserModule,

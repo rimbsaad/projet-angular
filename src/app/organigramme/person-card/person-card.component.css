@@ -1,0 +1,15 @@
+.example-card {
+    max-width: 200px;
+    max-width: 300px;
+  }
+  
+  .example-header-image {
+    background-size: cover;
+    width: 5em;
+    height: 5em;
+    margin-bottom: 10px;
+  }
+
+  mat-card-actions button {
+      margin: 0px 10px 0px 10px;
+  }

@@ -1,1 +1,45 @@
-<p>organigramme works!</p>
+<mat-card style="text-align: center;">
+      <mat-card-content>
+        <mat-card-title>Equipe dirigeante</mat-card-title>
+        <mat-card-subtitle>``Des équipes à l’affût des signaux du marché``</mat-card-subtitle>
+        <p>_________________________</p>
+        <h1 class="mat-display-3">Une mine de talents qui forme des talents</h1>
+      </mat-card-content>
+</mat-card>
+
+
+
+<div class="container">
+    <h1 *ngFor="let e of employees[0].level1; let i = index" class="level-1 rectangle">
+        <app-person-card [employee]="e"></app-person-card>
+    </h1>
+    <ol class="level-2-wrapper">
+        <div *ngFor="let e2 of employees[1].level2; let i2 = index">
+            <li>
+                <h2 class="level-2 rectangle">
+                    <app-person-card [employee]="e2"></app-person-card>
+                </h2>
+                <ol class="level-3-wrapper">
+                    <div *ngFor="let e3 of employees[2].level3[i2]; let i3 = index">
+                        <li>
+
+                            <h3 class="level-3 rectangle">
+                                <app-person-card [employee]="e3"></app-person-card>
+                            </h3>
+
+                            <ol class="level-4-wrapper">
+                                <div *ngFor="let e4 of employees[3].level4[i2]; let i4 = index">
+                                    <li>
+                                        <h4 class="level-4 rectangle">
+                                            <app-person-card [employee]="e4"></app-person-card>
+                                        </h4>
+                                    </li>
+                                </div>
+                            </ol>
+                        </li>
+                    </div>
+                </ol>
+            </li>
+        </div>
+    </ol>
+</div>
