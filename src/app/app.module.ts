@@ -11,6 +11,9 @@ import { OrganigrammeComponent } from './organigramme/organigramme.component';
 import { ContactComponent } from './contact/contact.component';
 import { MainNavComponent } from './main-nav/main-nav.component';
 import { PersonCardComponent } from './organigramme/person-card/person-card.component';
+import {ReactiveFormsModule} from '@angular/forms';
+import { CondidatureComponent } from './contact/condidature/condidature.component';
+
 
 @NgModule({
   declarations: [
@@ -20,13 +23,15 @@ import { PersonCardComponent } from './organigramme/person-card/person-card.comp
     OrganigrammeComponent,
     ContactComponent,
     MainNavComponent,
-    PersonCardComponent
+    PersonCardComponent,
+    CondidatureComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
