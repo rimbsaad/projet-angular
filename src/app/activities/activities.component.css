@@ -1,19 +1,16 @@
-body {
-    margin: 0;
-    color: #ffffff;
-    font: 600 16px/18px 'Open Sans', sans-serif;
-    overflow : hidden;
+mat-card {
+    padding: 5em;
+    background-color: #fc9403;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    height: 500px;
 }
 
-mat-card{
-    max-width : 100%;
-    text-align: center;
-    max-height: 700px;
-    margin:  auto;
-    border : 5px bold gray;
-
-    background-color: rgba(255, 255, 255, 0.836);
+.top {
+    background-image: url('https://images.pexels.com/photos/1105379/pexels-photo-1105379.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+    background-size: cover;
 }
+
 @media all and (min-width: 1265px) and (min-height: 860px) {
     mat-card {
       margin-top: calc(17vh - 10%);
@@ -24,51 +21,10 @@ mat-card-content{
     margin:auto;
 }
 
-
-.header{
-    
-    text-align : center;
-}
-
 .alink{
     float:center;
     text-decoration:underline; 
     position: absolute;
     top: 75%;
     left: 42%;
-    
-
-    
 }
-.image_logo {
-    width : 100px;
-    padding : 2em;  
-}
-
-
-.credit{
-    color: rgb(94, 94, 94);
-    padding : 80px;
-}
-.image_logo{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-mat-grid-tile {
-    background: rgba(171, 223, 240, 0.1);
-    border-radius: 2cm;
-    border:blue solid ;
-  }
-  
-  mat-grid-tile-header {
-    background: lightblue;
-    
-  }
-  .tile-header{
-      float:center;
-position: absolute;
-top:20%;
-  }

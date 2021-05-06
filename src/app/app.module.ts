@@ -11,8 +11,9 @@ import { OrganigrammeComponent } from './organigramme/organigramme.component';
 import { ContactComponent } from './contact/contact.component';
 import { MainNavComponent } from './main-nav/main-nav.component';
 import { PersonCardComponent } from './organigramme/person-card/person-card.component';
-import {ReactiveFormsModule} from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { CondidatureComponent } from './contact/condidature/condidature.component';
+import { ActCardComponent } from './activities/act-card/act-card.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { CondidatureComponent } from './contact/condidature/condidature.componen
     ContactComponent,
     MainNavComponent,
     PersonCardComponent,
-    CondidatureComponent
+    CondidatureComponent,
+    ActCardComponent
   ],
   imports: [
     BrowserModule,

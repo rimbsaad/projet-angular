@@ -1,58 +1,15 @@
-
-
 mat-card{
     width : 100%;
-    text-align: center;
     height: 100%;
-    margin:  auto;
+    margin:  -10px;
     position: fixed;
-    border : 5px bold gray;
+    text-align: center;
+    background-image: url('https://images.pexels.com/photos/3761266/pexels-photo-3761266.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+    background-size: cover;
+    color: white;
+}
 
-    background-color: rgba(255, 255, 255, 0.836);
-}
-@media all and (min-width: 1265px) and (min-height: 860px) {
-    mat-card {
-      margin-top: calc(17vh - 10%);
-    }
-}
 mat-card-content{
     padding : 60px;
     margin:auto;
 }
-
-
-
-.header{
-     
-    text-align : center;
-}
-
-.alink{
-    float:center;
-    text-decoration:underline; 
-    position: absolute;
-    top: 75%;
-    left: 42%;
-    
-
-    
-}
-.image_logo {
-    width : 100px;
-    padding : 2em;  
-}
-
-
-.credit{
-    color: rgb(94, 94, 94);
-    padding : 80px;
-}
-.image_logo{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-
-  

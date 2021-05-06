@@ -9,8 +9,10 @@
 }
 
 mat-card {
-    margin: 1em -10px;
+    margin: 0 -10px;
     padding: 5em;
+    background-color: #fc9403;
+    color: white;
 }
 
 * {
@@ -32,6 +34,7 @@ ol {
   position: relative;
   padding: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 7%;
 }
 
 
@@ -40,7 +43,7 @@ ol {
 .level-1 {
   width: 270px;
   margin: 0 auto 40px;
-  background: var(--level-1);
+  background: #fc9403;
 }
 
 .level-1::before {
@@ -102,7 +105,7 @@ ol {
 .level-2 {
   width: 240px;
   margin: 0 auto 40px;
-  background: var(--level-2);
+  background: #f5a02a;
 }
 
 .level-2::before {
@@ -163,7 +166,7 @@ ol {
 
 .level-3 {
   margin-bottom: 20px;
-  background: var(--level-3);
+  background: #fcae42;
 }
 
 
@@ -191,7 +194,7 @@ ol {
 
 .level-4 {
   font-weight: normal;
-  background: var(--level-4);
+  background: #f5ad49;
 }
 
 .level-4::before {
