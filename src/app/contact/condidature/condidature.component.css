@@ -1,13 +1,17 @@
-
+body {
+    margin: 0;
+    color: #ffffff;
+    background: #ffffff;
+    font: 600 16px/18px 'Open Sans', sans-serif;
+    overflow : hidden;
+}
 
 mat-card{
-    width : 100%;
+    max-width : 600px;
     text-align: center;
-    height: 100%;
+    max-height: 700px;
     margin:  auto;
-    position: fixed;
     border : 5px bold gray;
-
     background-color: rgba(255, 255, 255, 0.836);
 }
 @media all and (min-width: 1265px) and (min-height: 860px) {
@@ -21,27 +25,38 @@ mat-card-content{
 }
 
 
-
 .header{
-     
     text-align : center;
 }
+
+.full-width{
+    width : 480px;
+    margin-top: 50px;
+    float: center;
+}
+
+
 
 .alink{
     float:center;
     text-decoration:underline; 
     position: absolute;
-    top: 75%;
+    top: 65%;
     left: 42%;
     
 
     
 }
+
 .image_logo {
     width : 100px;
     padding : 2em;  
 }
 
+.mat-flat-button{
+    width : 110px;
+    border-radius: 4px;   
+}
 
 .credit{
     color: rgb(94, 94, 94);
@@ -55,4 +70,3 @@ mat-card-content{
 }
 
 
-  

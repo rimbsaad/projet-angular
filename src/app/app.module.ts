@@ -10,6 +10,9 @@ import { ActivitiesComponent } from './activities/activities.component';
 import { OrganigrammeComponent } from './organigramme/organigramme.component';
 import { ContactComponent } from './contact/contact.component';
 import { MainNavComponent } from './main-nav/main-nav.component';
+import {ReactiveFormsModule} from '@angular/forms';
+import { CondidatureComponent } from './contact/condidature/condidature.component';
+
 
 @NgModule({
   declarations: [
@@ -18,13 +21,15 @@ import { MainNavComponent } from './main-nav/main-nav.component';
     ActivitiesComponent,
     OrganigrammeComponent,
     ContactComponent,
-    MainNavComponent
+    MainNavComponent,
+    CondidatureComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

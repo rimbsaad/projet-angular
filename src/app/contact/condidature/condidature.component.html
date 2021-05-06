@@ -1,0 +1,46 @@
+
+    
+      <mat-card>
+        <mat-card-content>
+            <div class="header">
+                <div><img class ="image_logo" src="../../assets/img/res.png" alt="eScuola">
+                </div>
+                <div class="header1">
+                <h3> Candidature Spontanée</h3><p>L'équipe de Freez@exe vous met dans les meilleures conditions pour décrocher votre futur poste !</p>
+             </div>
+            </div>
+            <form  name="contactForm"  >
+                
+                <div >
+                    <mat-form-field class="full-width" >
+                    <ngx-mat-file-input formControlName="requiredfile" placeholder="Required input" valuePlaceholder="No file selected"  required></ngx-mat-file-input>
+                    <mat-icon matSuffix>folder</mat-icon>
+                   
+                    <mat-error *ngIf="formDoc.get('requiredfile').hasError('required')">
+                      Please select a file
+                    </mat-error>
+                    <mat-error *ngIf="formDoc.get('requiredfile').hasError('maxContentSize')">
+                      The total size must not exceed {{formDoc.get('requiredfile')?.getError('maxContentSize').maxSize | byteFormat}} ({{formDoc.get('requiredfile')?.getError('maxContentSize').actualSize
+                      | byteFormat}}).
+                    </mat-error>
+                  </mat-form-field>
+                
+                </div>
+        
+    
+                
+                <button mat-flat-button  color="primary" type="submit" >Postuler</button>
+                <div>
+                  <span class="alink"><a routerLink ="/contact"  routerLinkActive= "active" >Contactez-nous?</a></span>
+                </div>
+                <div >
+                <p class="credit">© 2021 Freez@exe</p>
+                </div>
+      
+            </form>
+        </mat-card-content>
+      
+      </mat-card>
+      
+      
+    

@@ -1,1 +1,64 @@
-<p>contact works!</p>
+<mat-card>
+    <mat-card-content>
+        <div class="header">
+            <div><img class ="image_logo" src="../../assets/img/res.png" alt="eScuola">
+            </div>
+            <div class="header1">
+            <h3> Contactez-nous</h3><p> N'hésitez pas à nous contacter si vous avez besoin de plus d'informations.</p>
+         </div>
+        </div>
+        <form  name="contactForm"  [formGroup]="contactForm">
+            <div class="text-input1">
+                <mat-form-field class="full-width" appearance="fill" color="primary">
+                    <mat-label>Nom</mat-label>
+                    <input formControlName="name" placeholder="RimBs" matInput required/>
+                    <mat-error *ngIf="contactForm.get('name').errors?.required">
+                        Veuillez saisir votre nom
+                    </mat-error>
+                </mat-form-field>
+            </div>
+            <div class="text-input2">
+                <mat-form-field class="full-width" appearance="fill" color="primary">
+                    <mat-label>E-mail</mat-label>
+                    <input formControlName="email" placeholder="RimMohamed@example.com" matInput required/>
+                    <mat-error *ngIf="contactForm.get('email').errors?.required">
+                        Veuillez saisir votre email
+                    </mat-error>
+                </mat-form-field>
+            </div>
+            <div class="text-input3">
+               <mat-form-field class="full-width" appearance="fill" color="primary">
+                 <mat-label>Objet</mat-label>
+                 <mat-select >
+                        <mat-option value="one">signaler un bug</mat-option>
+                        <mat-option value="two">Se renseigner</mat-option>
+                      </mat-select>
+             </mat-form-field>
+            </div>
+            <div class="text-input4">
+                <mat-form-field class="full-width" appearance="fill" color="primary">
+                    <mat-label>Message</mat-label>
+                    <textarea matInput required></textarea>
+                    <mat-error *ngIf="contactForm.get('textarea').errors?.required">
+                        Veuillez saisir votre message
+                    </mat-error>
+                </mat-form-field>
+            </div>
+            
+    
+
+            
+            <button mat-flat-button  color="primary" type="submit" >Envoyer</button>
+            <div>
+              <span class="alink"><a routerLink ="/condidature"  routerLinkActive= "active" >Condidature spontanée?</a></span>
+            </div>
+            <div >
+            <p class="credit">© 2021 Freez@exe</p>
+            </div>
+  
+        </form>
+    </mat-card-content>
+  
+  </mat-card>
+  
+  
